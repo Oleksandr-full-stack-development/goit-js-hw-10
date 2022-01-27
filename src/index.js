@@ -19,7 +19,7 @@ function onSearchInput (e) {
    API.fetchCountriesByName(query)
         .then(createCountryCards)
         .catch(onfetchError)
-        .finally(() => {refs.searchBox.value="";})
+        // .finally(() => {refs.searchBox.value="";})
 
     if (!query) {
         refs.countryContainer.textContent='';
